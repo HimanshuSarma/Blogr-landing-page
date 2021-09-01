@@ -1,0 +1,111 @@
+@import '../../ReusableComponents/ReusableComoponents.scss';
+
+.future-section {
+    margin: 3rem 0;
+    grid-template-areas: "... content ...";
+    overflow: hidden;
+    &-content {
+        grid-area: content;
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 0.75rem));
+        grid-template-rows: auto 1fr;
+        grid-column-gap: 1.5rem;
+    }
+    &-svg-container {
+        grid-column: 2 / span 1;
+        grid-row: 1 / -1;
+        position: relative;
+        z-index: 5;
+        & img {
+            width: auto;
+            height: auto;
+        }
+    }
+    &-desc-container {
+        margin-top: 5rem;
+        align-self: flex-start;
+        grid-column: 1 / span 1;
+        grid-row: 2 / -1;
+        grid-template-areas: "content";
+    }
+    &-heading {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+        text-align: center;
+        position: relative;
+        z-index: 6;
+        margin: 5rem 0 0;
+        font-size: 1.5rem;
+        color: rgba(12, 15, 71, 0.8);
+    }
+    &-desc-features {
+        grid-area: content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.2rem;
+    }
+    &-desc-feature {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+// 1115px
+@media (max-width: 69.6875em) {
+    .future-section {
+        grid-template-columns: minmax(5rem, 1fr) minmax(0, 65rem) minmax(5rem, 1fr);   
+        margin: 3rem 0 25rem;
+        &-svg-container {
+            margin-top: 5rem;
+            grid-column: 1 / -1;
+            grid-row: 2 / -1;
+            display: flex;
+            justify-content: center;
+            & img {
+                width: 60%;
+            }
+        }
+        &-desc-container {
+            grid-column: 1 / -1;
+            grid-row: 3 / -1;
+        }
+    }   
+}
+
+
+// 860px
+@media (max-width: 53.75em) {
+    .future-section {
+        margin: 3rem 0 52vw;
+        grid-template-columns: minmax(3rem, 1fr) minmax(0, 65rem) minmax(3rem, 1fr);   
+    }
+}
+
+
+/* 550px */
+@media (max-width: 34.375em) {
+    .future-section {
+        grid-template-columns: minmax(var(--side-gaps), 1fr) minmax(0, 65rem) minmax(var(--side-gaps), 1fr);   
+    }
+}
+
+// 500px
+@media (max-width: 31.25em) {
+    .future-section {
+        &-svg-container {
+            & img {
+                width: 75%;
+            }
+        }
+    }
+}
+
+// 420px
+@media (max-width: 26.25em) {
+    .future-section-svg-container img {
+        width: 90%;
+    }
+}
+

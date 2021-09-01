@@ -1,0 +1,12 @@
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(var(--side-gaps), 1fr) minmax(0, 75rem) minmax(var(--side-gaps), 1fr);
+
+    // 1295 px
+    @media (max-width: 80.9375em) {
+        grid-template-columns: minmax(var(--side-gaps), 1fr) minmax(0, 65rem) minmax(var(--side-gaps), 1fr);
+    }
+
+    
+}

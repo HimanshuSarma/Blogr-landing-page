@@ -1,0 +1,75 @@
+:root {
+    --very-light-red-rgb: rgb(255, 143, 112);
+    --very-light-red-hex: #ff8f70;
+    --light-red-rgb: rgb(255, 61, 84);
+    --light-red-hex: #ff3d54;
+    --white-rgb: rgb(255, 255, 255);
+    --white-hex: #fff;
+    --grayish-blue-rgb: rgb(200, 200, 203);
+    --grayish-blue-hex: #c8c8cb;
+    --very-dark-grayish-blue-rgb: rgb(75, 88, 98);
+    --very-dark-grayish-blue-hex: #4b5862;
+    --very-dark-black-blue-rgb: rgb(37, 37, 45);
+    --very-dark-black-blue-hex: #25252d;
+    /* background gradient intro/cta section */
+    --very-light-red-rgb: rgb(255, 143, 112);
+    --very-light-red-hex: #ff8f70;
+    /* background gradient body */
+    --very-dark-gray-blue-rgb: rgb(44, 45, 63);
+    --very-dark-gray-blue-hex: #2c2d3f;
+
+    /* Side gaps */
+    --side-gaps: 5rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img,
+button,
+a {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media (max-width: 68.125em) {
+    :root {
+        --side-gaps: 3rem;
+    }
+}
+
+
+/* 550px */
+@media (max-width: 34.375em) {
+    :root {
+        --side-gaps: 2rem;
+    }
+}

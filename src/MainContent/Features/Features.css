@@ -1,0 +1,125 @@
+.feature-title {
+  margin-bottom: 0;
+  font-size: 1.325rem;
+  color: rgba(12, 15, 71, 0.8);
+}
+
+.feature-desc {
+  margin-top: 1.5rem;
+  line-height: 25px;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.7px;
+}
+
+.footer-btn {
+  padding: 0;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  -webkit-transition: color 350ms;
+  transition: color 350ms;
+}
+
+.footer-btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 69.6875em) {
+  .feature-desc {
+    width: 80%;
+  }
+}
+
+@media (max-width: 34.375em) {
+  .feature-title,
+  .feature-desc {
+    text-align: center;
+  }
+  .feature-desc {
+    margin-right: 0px;
+  }
+  .feature-desc {
+    width: 100%;
+  }
+}
+
+.features {
+  grid-area: features;
+      grid-template-areas: "... features-content ...";
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+
+.features-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: features-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(50% - 1rem))[2];
+      grid-template-columns: repeat(2, calc(50% - 1rem));
+      grid-template-areas: "svg content";
+  grid-column-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-content-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+.features-content-svg-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: svg;
+  position: relative;
+  height: 786px;
+}
+
+.features-content-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+@media (max-width: 69.6875em) {
+  .features-content {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas: "svg" "content";
+    grid-column-gap: 0;
+  }
+  .features-content-svg {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .features-content-svg-container {
+    width: 75%;
+    height: auto;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .features-content-details {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 26.25em) {
+  .features-content-svg-container {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=Features.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,UAAU,CAAC;EACP,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,6BAA6B,CAAC,gBAAgB,CAAC,6BAA6B;CAQtG;;AALG,MAAM,EAAE,SAAS,EAAE,SAAS;EALhC,AAAA,UAAU,CAAC;IAMH,qBAAqB,EAAE,6BAA6B,CAAC,gBAAgB,CAAC,6BAA6B;GAI1G",
+    "sources": [
+        "MainGrid.scss"
+    ],
+    "names": [],
+    "file": "MainGrid.css"
+}

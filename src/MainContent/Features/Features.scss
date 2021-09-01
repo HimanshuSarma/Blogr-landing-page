@@ -1,0 +1,67 @@
+@import '../../ReusableComponents/ReusableComoponents.scss';
+
+.features {
+    grid-area: features;
+    grid-template-areas: "... features-content ...";
+    margin-bottom: 5rem;
+    overflow: hidden;
+    &-content {
+        grid-area: features-content;
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 1rem));
+        grid-template-areas: "svg content";
+        grid-column-gap: 2rem;
+        align-items: center;
+        &-svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: auto;
+            height: auto;
+            &-container {
+                grid-area: svg;
+                position: relative;
+                height: 786px;
+            }
+        }
+        &-details {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+    }
+}
+
+@media (max-width: 69.6875em) {
+    .features {
+        &-content {
+            grid-template-columns: 100%;
+            grid-template-areas: "svg" "content";
+            grid-column-gap: 0;
+            &-svg {
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+                &-container {
+                    width: 75%;
+                    height: auto;
+                    justify-self: center;
+                }
+            }
+            &-details {
+                margin-top: 4rem;
+            }
+        }
+    }
+}
+
+
+// 420px
+@media (max-width: 26.25em) {
+    .features-content-svg-container {
+        width: 90%;
+    }
+}
+
+

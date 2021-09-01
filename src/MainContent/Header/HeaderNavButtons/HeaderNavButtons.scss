@@ -1,0 +1,109 @@
+// .header {
+//     &-nav-btns {
+//         flex-grow: 1;
+//         display: flex;
+//         align-items: center;
+//         column-gap: 2rem;
+//         list-style: none;
+//         padding: 0;
+//         & .header-nav-btn {
+//             border: none;
+//             background-color: transparent;
+//             color: rgba(255, 255, 255, 0.7);
+//             font-size: 1rem;
+//             font-weight: 500;
+//             font-family: 'Ubuntu', sans-serif;
+//             border-bottom: 2px solid transparent;
+//             padding: 0;
+//             transition: border-bottom 350ms, color 350ms;
+//             cursor: pointer;
+//             &:hover {
+//                 border-bottom: 2px solid rgba(255,255,255,0.9);
+//                 color: rgba(255,255,255,0.9);
+//             }
+//         }
+//         & .header-nav-btn-icon-light,
+//         & .header-nav-btn-icon-dark {
+//             margin-left: 0.5rem;
+//             width: auto;
+//             height: auto;
+//             transition: transform 350ms;
+//         }
+//         & .header-nav-btn-icon-light {
+//             display: inline-block;
+//         }
+//         & .header-nav-btn-icon-dark {
+//             display: none;
+//         }
+//     }
+//     &-nav-btn {
+//         &-title {
+//             text-align: center;
+//         }
+//         & p{
+//             margin: 0;
+//             display: inline-block;
+//         }
+//         &:hover &-dropdown {
+//            transform: scaleY(1);
+//         }
+//         &:hover &-dropdown-btn {
+//             opacity: 1;
+//         }
+//         &:hover .header-nav-btn-icon {
+//             transform: rotate(180deg);
+//         }
+//     }
+//     &-nav-btn-dropdown {
+//         width: 10rem;
+//         margin-top: 1rem;
+//         background-color: white;
+//         padding: 1rem 0;
+//         border-radius: 10px;
+//         display: flex;
+//         flex-direction: column; 
+//         row-gap: 1rem;
+//         position: absolute;   
+//         box-shadow: 0 0.8rem 1rem rgba(0,0,0,0.15);
+//         transform: scaleY(0);
+//         transform-origin: top;
+//         transition: transform 350ms;
+//         &-btn {
+//             border: none;
+//             background-color: transparent;
+//             font-size: 1rem;
+//             color: rgba(0,0,0,0.5);
+//             opacity: 0;
+//             transition: opacity 350ms, color 350ms;
+//             &:hover {
+//                 color: rgba(0,0,0,0.8);
+//             }
+//         } 
+//     }
+
+//     &-auth {
+//         display: flex;
+//         align-items: center;
+//         column-gap: 1rem;
+//         margin-left: auto;
+//         &-login {
+//             border: none;
+//             background-color: transparent;
+//             color: white;
+//             font-size: 1rem;
+//         }
+//         &-signup {
+//             border: none;
+//             padding: 0.7rem 1.7rem 0.5rem;
+//             font-size: 1rem;
+//             font-weight: 700;
+//             border-radius: 20px;
+//             color: #c3434d;
+//             transition: background-color 350ms, color 350ms;
+//             &:hover {
+//                 background-color: var(--very-light-red-rgb);
+//                 color: white;
+//             }
+//         }
+//     }
+// }

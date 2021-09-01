@@ -1,0 +1,47 @@
+.feature-title {
+    margin-bottom: 0;
+    font-size: 1.325rem;
+    color: rgba(12, 15, 71, 0.8);
+}
+
+.feature-desc {
+    margin-top: 1.5rem;
+    line-height: 25px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.7px;
+}
+
+.footer-btn {
+    padding: 0;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    background-color: transparent;
+    transition: color 350ms;
+    &:hover {
+        color: rgba(255,255,255,0.8);
+    }
+}
+
+@media (max-width: 69.6875em) {
+    .feature-desc {
+        width: 80%;
+    }
+}
+
+
+// 550px
+@media (max-width: 34.375em) {
+    .feature-title,
+    .feature-desc {
+        text-align: center;
+    }
+
+    .feature-desc {
+        margin-right: 0px;
+    }
+
+    .feature-desc {
+        width: 100%;
+    }
+}
